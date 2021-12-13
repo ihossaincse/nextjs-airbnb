@@ -52,7 +52,7 @@ const Search = ({searchResults}) => {
 export default Search
 
 export async function getServerSideProps() {
-    const searchResults = await fetch("http://localhost:3000/api/searchResults").
+    const searchResults = await fetch("https://links.papareact.com/isz").
     then(res => res.json());
 
     return {
